@@ -1,5 +1,7 @@
-# api/index.py
 from fastapi import FastAPI
-from app.main import app  # Imports the FastAPI app 
+from app.main import app  # Imports the FastAPI app from your app directory
 
-api = app  # Vercel to use the FastAPI app as the entry point
+# Vercel expects a function named `handler` to handle incoming requests
+def handler(request):
+    return app(request)
+

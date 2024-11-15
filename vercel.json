@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "api/index.py",  // The entry point for the Meal Plan API
+        "use": "@vercel/python" 
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",  // Catches all routes
+        "dest": "api/index.py"  // Routes all requests to the `index.py` file
+      }
+    ]
+  }
+  
