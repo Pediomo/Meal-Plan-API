@@ -52,7 +52,7 @@ The API correctly handles errors such as:
 - Missing required fields or invalid data types.
 - Handling of extra fields in the request.
 
-## How to Test the API
+# How to Test the API
 
 You can easily test the Meal Plan API by following these steps:
 
