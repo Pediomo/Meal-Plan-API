@@ -51,3 +51,29 @@ The API correctly handles errors such as:
 - Meal plans not found.
 - Missing required fields or invalid data types.
 - Handling of extra fields in the request.
+
+## How to Test the API
+
+You can easily test the Meal Plan API by following these steps:
+
+### 1. Access the Swagger UI
+- Visit the public Swagger UI for the Meal Plan API:  
+  [https://meal-plan-api-wgrv.onrender.com/docs](https://meal-plan-api-wgrv.onrender.com/docs)
+
+### 2. Explore Available Endpoints
+- The Swagger UI will display a list of all available API endpoints.
+- Each endpoint provides information about its method (GET, POST, etc.), parameters, and possible responses.
+
+### 3. Test API Endpoints
+- Select the endpoint you want to test (e.g., `GET /meal-plans`).
+- Click **"Try it out"** to enable the input fields for that endpoint.
+- Provide any required parameters (if any).
+- Click **"Execute"** to send a test request to the API.
+- Review the response displayed in the UI, including the status code and data returned.
+
+### 4. Example Testing (GET /meal-plans)
+- To test retrieving all meal plans:
+  1. In Swagger UI, click on the **`GET /meal-plans`** endpoint.
+  2. Click **"Try it out"**.
+  3. Click **"Execute"** to send the request.
+  4. View the response data, which will show the list of meal plans (if available).
